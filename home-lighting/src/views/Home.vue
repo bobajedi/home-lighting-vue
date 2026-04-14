@@ -196,7 +196,21 @@ const order = (name) => window.open(`https://wa.me/38348722922?text=Përshëndet
   font-size: 1rem;
 }
 
-@media (min-width: 768px) { .p-price { font-size: 1.5rem; } }
+@media (min-width: 768px) {
+   .p-price { 
+    font-size: 1.5rem; 
+  } 
+  }
+
+  @media (max-width:768px){
+    .brands-bar{
+     display: none;
+    }
+    .product-card{
+      display: grid;
+      grid-template-columns: repeat(1fr);
+    }
+  }
 
 .p-status {
   font-size: 0.6rem;

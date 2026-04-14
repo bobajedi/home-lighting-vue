@@ -66,7 +66,7 @@
             </div>
             <div class="p-3 card-content">
               <h3 class="product-title">{{ p.name }}</h3>
-              <div class="d-flex justify-content-between align-items-center mt-3">
+              <div class="d-flex justify-content-between align-items-center mt-auto">
                 <span class="price-tag">{{ p.price }}€</span>
                 <button @click="addToCart(p)" class="btn-add-plus">+</button>
               </div>
@@ -93,38 +93,20 @@ const products = ref([
   { id: 2, name: 'Ndriçues Muri', brand: 'Ave', price: 45, cat: 'Jashtëm', img: hm5 },
   { id: 3, name: 'Spotlight Pro', brand: 'FSL', price: 85, cat: 'Brendshëm', img: hm3 },
   { id: 4, name: 'Elegance Gold', brand: 'Crown', price: 65, cat: 'Brendshëm', img: hm5 },
-  { id: 1, name: 'Llambadar Modern', brand: 'Cata', price: 125, cat: 'Brendshëm', img: hm3 },
-  { id: 2, name: 'Ndriçues Muri', brand: 'Ave', price: 45, cat: 'Jashtëm', img: hm5 },
-  { id: 3, name: 'Spotlight Pro', brand: 'FSL', price: 85, cat: 'Brendshëm', img: hm3 },
-  { id: 4, name: 'Elegance Gold', brand: 'Crown', price: 65, cat: 'Brendshëm', img: hm5 },
-  { id: 1, name: 'Llambadar Modern', brand: 'Cata', price: 125, cat: 'Brendshëm', img: hm3 },
-  { id: 2, name: 'Ndriçues Muri', brand: 'Ave', price: 45, cat: 'Jashtëm', img: hm5 },
-  { id: 3, name: 'Spotlight Pro', brand: 'FSL', price: 85, cat: 'Brendshëm', img: hm3 },
-  { id: 4, name: 'Elegance Gold', brand: 'Crown', price: 65, cat: 'Brendshëm', img: hm5 },
-  { id: 1, name: 'Llambadar Modern', brand: 'Cata', price: 125, cat: 'Brendshëm', img: hm3 },
-  { id: 2, name: 'Ndriçues Muri', brand: 'Ave', price: 45, cat: 'Jashtëm', img: hm5 },
-  { id: 3, name: 'Spotlight Pro', brand: 'FSL', price: 85, cat: 'Brendshëm', img: hm3 },
-  { id: 4, name: 'Elegance Gold', brand: 'Crown', price: 65, cat: 'Brendshëm', img: hm5 },
-  { id: 1, name: 'Llambadar Modern', brand: 'Cata', price: 125, cat: 'Brendshëm', img: hm3 },
-  { id: 2, name: 'Ndriçues Muri', brand: 'Ave', price: 45, cat: 'Jashtëm', img: hm5 },
-  { id: 3, name: 'Spotlight Pro', brand: 'FSL', price: 85, cat: 'Brendshëm', img: hm3 },
-  { id: 4, name: 'Elegance Gold', brand: 'Crown', price: 65, cat: 'Brendshëm', img: hm5 },
-  { id: 1, name: 'Llambadar Modern', brand: 'Cata', price: 125, cat: 'Brendshëm', img: hm3 },
-  { id: 2, name: 'Ndriçues Muri', brand: 'Ave', price: 45, cat: 'Jashtëm', img: hm5 },
-  { id: 3, name: 'Spotlight Pro', brand: 'FSL', price: 85, cat: 'Brendshëm', img: hm3 },
-  { id: 4, name: 'Elegance Gold', brand: 'Crown', price: 65, cat: 'Brendshëm', img: hm5 },
-  { id: 1, name: 'Llambadar Modern', brand: 'Cata', price: 125, cat: 'Brendshëm', img: hm3 },
-  { id: 2, name: 'Ndriçues Muri', brand: 'Ave', price: 45, cat: 'Jashtëm', img: hm5 },
-  { id: 3, name: 'Spotlight Pro', brand: 'FSL', price: 85, cat: 'Brendshëm', img: hm3 },
-  { id: 4, name: 'Elegance Gold', brand: 'Crown', price: 65, cat: 'Brendshëm', img: hm5 },
-  { id: 1, name: 'Llambadar Modern', brand: 'Cata', price: 125, cat: 'Brendshëm', img: hm3 },
-  { id: 2, name: 'Ndriçues Muri', brand: 'Ave', price: 45, cat: 'Jashtëm', img: hm5 },
-  { id: 3, name: 'Spotlight Pro', brand: 'FSL', price: 85, cat: 'Brendshëm', img: hm3 },
-  { id: 4, name: 'Elegance Gold', brand: 'Crown', price: 65, cat: 'Brendshëm', img: hm5 },
-  { id: 1, name: 'Llambadar Modern', brand: 'Cata', price: 125, cat: 'Brendshëm', img: hm3 },
-  { id: 2, name: 'Ndriçues Muri', brand: 'Ave', price: 45, cat: 'Jashtëm', img: hm5 },
-  { id: 3, name: 'Spotlight Pro', brand: 'FSL', price: 85, cat: 'Brendshëm', img: hm3 },
-  { id: 4, name: 'Elegance Gold', brand: 'Crown', price: 65, cat: 'Brendshëm', img: hm5 },
+  { id: 5, name: 'Llambadar Modern 2', brand: 'Cata', price: 125, cat: 'Brendshëm', img: hm3 },
+  { id: 6, name: 'Ndriçues Muri 2', brand: 'Ave', price: 45, cat: 'Jashtëm', img: hm5 },
+  { id: 7, name: 'Llambadar Modern', brand: 'Cata', price: 125, cat: 'Brendshëm', img: hm3 },
+  { id: 8, name: 'Ndriçues Muri', brand: 'Ave', price: 45, cat: 'Jashtëm', img: hm5 },
+  { id: 9, name: 'Spotlight Pro', brand: 'FSL', price: 85, cat: 'Brendshëm', img: hm3 },
+  { id: 10, name: 'Elegance Gold', brand: 'Crown', price: 65, cat: 'Brendshëm', img: hm5 },
+  { id: 11, name: 'Llambadar Modern 2', brand: 'Cata', price: 125, cat: 'Brendshëm', img: hm3 },
+  { id: 12, name: 'Ndriçues Muri 2', brand: 'Ave', price: 45, cat: 'Jashtëm', img: hm5 },
+  { id: 13, name: 'Llambadar Modern', brand: 'Cata', price: 125, cat: 'Brendshëm', img: hm3 },
+  { id: 14, name: 'Ndriçues Muri', brand: 'Ave', price: 45, cat: 'Jashtëm', img: hm5 },
+  { id: 15, name: 'Spotlight Pro', brand: 'FSL', price: 85, cat: 'Brendshëm', img: hm3 },
+  { id: 16, name: 'Elegance Gold', brand: 'Crown', price: 65, cat: 'Brendshëm', img: hm5 },
+  { id: 17, name: 'Llambadar Modern 2', brand: 'Cata', price: 125, cat: 'Brendshëm', img: hm3 },
+  { id: 18, name: 'Ndriçues Muri 2', brand: 'Ave', price: 45, cat: 'Jashtëm', img: hm5 },
 ])
 
 const filteredProducts = computed(() => {
@@ -150,15 +132,12 @@ const sendWhatsApp = () => {
 }
 .background-overlay { 
   position: fixed; 
-  top: 0; 
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   z-index: -1;
 }
 .bg-img { 
-  width: 100%;
-  height: 100%; 
+  width: 100%; height: 100%; 
   object-fit: cover;
   filter: blur(15px) brightness(0.4);
   transform: scale(1.1);
@@ -166,89 +145,69 @@ const sendWhatsApp = () => {
 }
 .light-ambiance { 
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
   background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.9) 100%);
   transition: 0.8s;
 }
 
+
 .light-on .light-ambiance {
   background: radial-gradient(circle, rgba(255, 244, 214, 0.15) 0%, rgba(212, 175, 55, 0.1) 100%), rgba(255, 253, 245, 0.7);
 }
-.light-on .bg-img { 
-  filter: blur(12px) brightness(0.8); 
-}
-.light-on .main-title, .light-on .product-title {
-  color: #1a1a1a !important; 
-}
-.light-on .glass-card { 
-  background: rgba(255, 255, 255, 0.4); 
-  border-color: rgba(0,0,0,0.05); 
-}
-.dark-mode .main-title, .dark-mode .product-title {
-  color: #ffffff !important; 
-}
+.light-on .bg-img { filter: blur(12px) brightness(0.8); }
+.light-on .main-title, .light-on .product-title { color: #1a1a1a !important; }
+.light-on .glass-card { background: rgba(255, 255, 255, 0.5); border-color: rgba(0,0,0,0.05); }
+
+
+.dark-mode .main-title, .dark-mode .product-title { color: #ffffff !important; }
+
 
 .category-pills {
   display: flex;
   justify-content: center;
-  gap: 15px; flex-wrap: wrap; 
+  gap: 12px; flex-wrap: wrap; 
 }
 .btn-cat {
-  border: none; padding: 10px 25px; 
+  border: none; padding: 10px 22px; 
   border-radius: 50px;
   font-weight: 600;
-  font-size: 0.9rem;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-size: 0.85rem;
+  transition: 0.3s;
   cursor: pointer;
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
   backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
-.btn-cat:hover {
-   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
-}
-.btn-cat.all.active {
-   background: #6c757d; 
-   box-shadow: 0 0 20px rgba(108, 117, 125, 0.4); 
-}
-.btn-cat.indoor.active { 
-  background: #d4af37;
-  color: #000;
-  box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
-}
-.btn-cat.outdoor.active {
-   background: #2ecc71; 
-   color: #000;
-  box-shadow: 0 0 20px rgba(46, 204, 113, 0.5); 
-}
-.light-on .btn-cat:not(.active) {
-  background: rgba(0, 0, 0, 0.05);
-  color: #333;
-  border-color: rgba(0, 0, 0, 0.1); 
-}
+.btn-cat.active { transform: scale(1.05); }
+.btn-cat.all.active { background: #6c757d; }
+.btn-cat.indoor.active { background: #d4af37; color: #000; }
+.btn-cat.outdoor.active { background: #2ecc71; color: #000; }
 
 .glass-card {
+  height: 100%; 
+  display: flex;
+  flex-direction: column;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  border-radius: 15px;
   overflow: hidden; 
-  transition: 0.5s;
+  transition: 0.4s ease;
 }
 
-.text-gold { 
-  color: #d4af37 !important;
-  font-weight: 800;
+.card-content {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .img-container {
-   height: 200px; 
+   height: 180px; 
    overflow: hidden;
+   background: rgba(255,255,255,0.03);
 }
 
 .img-container img {
@@ -258,108 +217,76 @@ const sendWhatsApp = () => {
   transition: 0.5s;
 }
 
-.glass-card:hover .img-container img {
-   transform: scale(1.1);
+.product-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 2.8em; 
 }
 
 .price-tag {
   color: #d4af37;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 .btn-add-plus {
   background: #d4af37;
-  border: none; width: 35px;
-  height: 35px; border-radius: 10px;
-  color: #000; font-weight: 900;
-  transition: 0.3s; 
+  border: none; width: 32px; height: 32px;
+  border-radius: 8px;
+  color: #000; font-weight: 800;
+  transition: 0.2s;
 }
 
 .controls-wrapper {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 15px; right: 15px;
   z-index: 1000;
-  display: flex;
-  gap: 10px; 
+  display: flex; gap: 10px; 
 }
 
 .btn-control {
-  background: rgba(255,255,255,0.15);
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.2);
-  width: 50px; 
-  height: 50px;
+  border: 1px solid rgba(255,255,255,0.1);
+  width: 45px; height: 45px;
   border-radius: 50%;
   color: #fff;
-  font-size: 1.2rem;
   cursor: pointer; 
-  transition: 0.3s;
-}
-
-.light-on .btn-control {
-  color: #000; 
-  border-color: rgba(0,0,0,0.1);
-  background: rgba(0,0,0,0.05); 
 }
 
 .cart-drawer {
   position: fixed;
-  top: 0;
-  right: -350px;
-  width: 320px;
-  height: 100%;
-  background: rgba(0,0,0,0.85);
+  top: 0; right: -100%;
+  width: 300px; height: 100%;
+  background: rgba(15, 15, 15, 0.95);
   backdrop-filter: blur(20px);
   z-index: 2000;
-  transition: 0.4s; 
-  padding: 25px; 
-  color: #fff; 
+  transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 20px; color: #fff; 
 }
-
-.cart-drawer.open { 
-  right: 0;
-}
-
-.mini-item {
-  display: flex;
-  align-items: center;
-  gap: 10px; 
-  margin-bottom: 15px;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
-  padding-bottom: 10px; 
-}
-
-.mini-item img { 
-  width: 45px;
-  height: 45px;
-  border-radius: 8px;
-  object-fit: cover; 
-}
-
-.btn-wa-order { 
-  width: 100%; 
-  background: #25d366;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 12px;
-  font-weight: bold;
-  margin-top: 20px;
-}
-
+.cart-drawer.open { right: 0; }
 @media (max-width: 768px) { 
-  .img-container 
-  { height: 160px;
+  .img-container { height: 140px; }
+  .product-title { font-size: 0.85rem; min-height: 2.6em; }
+  .price-tag { font-size: 1rem; }
+  .cart-drawer { width: 85%; }
+  .main-title { font-size: 1.8rem; }
+  
+  .btn-cat { padding: 8px 15px; font-size: 0.75rem; }
+  
+  .row.g-3 {
+    --bs-gutter-x: 0.6rem;
+    --bs-gutter-y: 0.6rem;
   }
-   .cart-drawer 
-   { width: 100%;
-     right: -100%;
-  } 
-   .btn-cat { padding: 8px 18px;
-     font-size: 0.8rem; 
+  
+  .controls-wrapper {
+    top: auto;
+    bottom: 20px; 
   }
 }
-
 </style>

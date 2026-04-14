@@ -105,4 +105,10 @@ body {
       padding: 6px 15px;
   }
 }
+@media (max-width:768px){
+  .logo{
+    width: 110px;
+    height: 90px;
+  }
+}
 </style>
